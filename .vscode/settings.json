@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/marcus/.local/share/virtualenvs/fastapi-tdd-docker-kaf2A7ZS/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}
