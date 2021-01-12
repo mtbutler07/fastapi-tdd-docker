@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-from fastapi import FastAPI, Depends
-from app.config import get_settings, Settings
+from fastapi import Depends, FastAPI
 
+from app.config import Settings, get_settings
 
 app = FastAPI()
 

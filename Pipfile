@@ -4,14 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-fastapi = "==0.62.0"
-uvicorn = "==0.13.1"
 asyncpg = "==0.21.0"
+fastapi = "==0.62.0"
+tortoise-orm = "==0.16.18"
+uvicorn = "==0.13.1"
 
 [dev-packages]
 black = "*"
 flake8 = "*"
 pytest = "*"
+pre-commit = "*"
+isort = "*"
 
 [requires]
 python_version = "3.9"
