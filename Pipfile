@@ -6,6 +6,7 @@ verify_ssl = true
 [packages]
 fastapi = "==0.62.0"
 uvicorn = "==0.13.1"
+asyncpg = "==0.21.0"
 
 [dev-packages]
 black = "*"
