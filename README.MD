@@ -6,8 +6,8 @@ Code from working through the [FastAPI & Docker course](https://testdriven.io/co
 
 # Installation
 
-1. Install Python `sudo apt install python3.9 python3.9-dev`
-2. Install pipenv `python3.9 -m pip install pipenv -U --user`
+1. Install Python `sudo apt install python3.8 python3.8-dev`
+2. Install pipenv `python3.8 -m pip install pipenv -U --user`
 3. Install project dependencies `pipenv install --python 3.9`
 4. Install project dev dependencies `pipenv install --dev`
 

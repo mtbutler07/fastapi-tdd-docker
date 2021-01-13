@@ -1,10 +1,12 @@
-FROM python:3.9.0-slim-buster
+FROM python:3.8.6-slim-buster
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV ENVIRONMENT dev
+ENV TESTING true
 
 RUN apt-get update \
     && apt-get -y install netcat gcc \
