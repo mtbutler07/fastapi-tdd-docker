@@ -7,11 +7,9 @@ from app.models.pydantic import SummaryPayloadSchema
 from app.models.tortoise import TextSummary
 
 
-async def get_all() -> Optional[List]:
-    result = await TextSummary.all().values()
-    if result:
-        return result
-    return None
+async def get_all() -> List:
+    summaries = await TextSummary.all().values()
+    return summaries
 
 
 async def get(id: int) -> Optional[dict]:
