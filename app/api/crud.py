@@ -20,9 +20,14 @@ async def get(id: int) -> Optional[dict]:
 
 
 async def post(payload: SummaryPayloadSchema) -> int:
-    result = TextSummary(
+    summary = TextSummary(
         url=payload.url,
         summary="dummy summary",
     )
-    await result.save()
-    return result.id
+    await summary.save()
+    return summary.id
+
+
+async def delete(id: int) -> int:
+    summary = await TextSummary.filter(id=id).first().delete()
+    return summary
