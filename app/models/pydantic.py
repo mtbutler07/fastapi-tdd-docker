@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from pydantic import BaseModel
+from pydantic import AnyHttpUrl, BaseModel
 
 
 class SummaryPayloadSchema(BaseModel):
-    url: str
+    url: AnyHttpUrl
 
 
 class SummaryResponseSchema(SummaryPayloadSchema):
